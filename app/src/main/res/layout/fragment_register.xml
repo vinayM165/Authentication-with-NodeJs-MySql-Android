@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.Register">
+
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Register"
+    android:textSize="24sp"
+    android:id="@+id/reg"
+    android:layout_centerHorizontal="true"
+    android:layout_marginTop="28dp"/>
+
+    <EditText
+        android:layout_width="309dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/reg"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="72dp"
+        android:hint="Username"
+        android:id="@+id/usn"/>
+    <EditText
+        android:id="@+id/pass"
+        android:layout_width="309dp"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/usn"
+        android:layout_marginTop="42dp"
+        android:layout_centerHorizontal="true">
+    </EditText>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Register"
+        android:id="@+id/regbtn"
+        android:layout_below="@id/pass"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="42dp"/>
+
+</RelativeLayout>

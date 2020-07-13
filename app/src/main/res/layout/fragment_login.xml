@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.login">
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="68dp"
+        android:text="Login"
+        android:textSize="24sp"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:id="@+id/uname_login"
+        android:layout_width="291dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="104dp"
+        android:layout_centerHorizontal="true"
+        android:ems="10"
+        android:layout_alignTop="@id/textView3"
+        android:hint="Name"
+        android:inputType="textPersonName"
+
+
+        app:layout_constraintTop_toBottomOf="@+id/textView3"
+        android:autofillHints="" />
+
+    <EditText
+        android:id="@+id/pass_login"
+        android:layout_width="284dp"
+        android:layout_height="48dp"
+        android:layout_alignTop="@id/uname_login"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="84dp"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPassword" />
+
+    <Button
+        android:id="@+id/login_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/pass_login"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="72dp"
+        android:text="Login" />
+</RelativeLayout>
