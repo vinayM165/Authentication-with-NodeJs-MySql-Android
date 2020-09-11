@@ -37,6 +37,19 @@ connection.query('insert into users Values (?,?)',[username,password],(err,resul
    }
 })
 })
+app.delete('/delete',(req,res)=>{
+    let sql  ='DELETE FROM users WHERE username = '+'"'+ req.body.username+ '"'    
+    connection.query(sql,(err,result)=>{
+        if(!err && result != null){
+            res.status(200).send()
+            console.log('user deleted from users')
+        } else{
+            res.send('wrong credentials').end
+            console.error(err)
+        }
+    })
+})
+app.get()
 
 app.listen(port,()=>{
     console.log('$erver is listening....')
