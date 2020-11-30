@@ -49,7 +49,6 @@ app.delete('/delete',(req,res)=>{
         }
     })
 })
-app.get()
 
 app.listen(port,()=>{
     console.log('$erver is listening....')
